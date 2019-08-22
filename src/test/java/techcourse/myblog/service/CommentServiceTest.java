@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import techcourse.myblog.domain.article.Article;
 import techcourse.myblog.domain.article.ArticleDetails;
 import techcourse.myblog.domain.comment.Comment;
@@ -22,7 +22,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
-@ExtendWith(MockitoExtension.class)
+@ExtendWith(SpringExtension.class)
 class CommentServiceTest {
     private final static Long DEFAULT_ID = 1L;
     private final static String USER_NAME = "name";
